@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/activity_main"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -9,5 +10,50 @@
     android:paddingRight="16dp"
     android:paddingTop="16dp"
     android:paddingBottom="16dp"
+    android:background="#48c9b0"
     tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/Askbutton"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+
+        android:background="@color/colorPrimaryDark"
+        android:fontFamily="sans-serif-condensed"
+        android:shadowColor="@android:color/darker_gray"
+        android:soundEffectsEnabled="true"
+        android:text="Ask"
+        android:textColor="#ffffff"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/image_firstball"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ball1"
+        android:layout_above="@+id/Askbutton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="9dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="28dp"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:text="Make everyday decisions easier!"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:background="#2c3e50"/>
+
 </RelativeLayout>
